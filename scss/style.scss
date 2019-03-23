@@ -25,6 +25,8 @@ header {
 }
 
 .main-headline {
+    margin-bottom: 10vh;
+    
     h1, p {
         color: $white;
         font-weight: 300;
@@ -41,9 +43,9 @@ header {
     }
 }
 
-.bottom-right-angle {
-    border-bottom: 100vh solid $secondary-color;
-    border-left: 100vw solid transparent;
+.blue-angle {
+    background-color: $secondary-color;
     opacity: .55;
-    box-shadow: 5px 5px 10px #aaa;
+    height: 100vh;
+    width: 100%;
 }
