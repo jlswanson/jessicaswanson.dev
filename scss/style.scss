@@ -43,9 +43,35 @@ header {
     }
 }
 
-.blue-angle {
-    background-color: $secondary-color;
-    opacity: .55;
-    height: 100vh;
+.example-one {
+    height: 200vh;
     width: 100%;
+    position: relative;
+    padding: 12em 8em;
+    
+    &:before {
+        background-color: $secondary-color;
+        display: block;
+        content: '';
+        height: 100%;
+        opacity: .55;
+        transform: skewY(-10deg);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    h2 {
+        font-family: 'Oswald', Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    p {
+        font-weight: 200;
+        margin-bottom: 0;
+    }
 }
